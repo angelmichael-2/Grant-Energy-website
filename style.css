@@ -1,0 +1,163 @@
+/* Theme Colors */
+:root {
+  --green: #0b8740;
+  --green-dark: #076b32;
+  --yellow: #ffcc00;
+  --yellow-dark: #e6b800;
+  --black: #111111;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --bg: #fff8e6;
+  --card: #ffffff;
+  --border: #e6b800;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+
+  background: 
+    linear-gradient(rgba(255, 249, 230, 0.9), rgba(255, 242, 204, 0.9)),
+    url("IMAGES/diesel_pump.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--green);
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--yellow);
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--yellow);
+}
+
+/* Sections */
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--green-dark);
+}
+
+.btn-outline {
+  border: 2px solid var(--green);
+  color: var(--green);
+  background: #fff;
+}
+
+.btn-outline:hover {
+  background: #f3fff6;
+}
+
+/* Form */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-top: 6px;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, var(--green), var(--yellow));
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* WhatsApp Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
